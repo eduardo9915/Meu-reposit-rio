@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #ffe600;
+    padding: 10px 100px;
+}
+
+.primeiro{
+    display: flex;
+    gap: 1rem;
+}
+
+.segundo{
+    display: flex;
+    gap: 2rem;
+}
+
+.divpai{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputs{
+    width: 651px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.inputs input{
+    width: 651px;
+    border: none;
+    height: 43px;
+    cursor: pointer;
+    padding: 12px 20px 12px 16px;
+    border-radius: 2px;
+}
+
+.inputs label{
+    position: absolute;
+    right: 13px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.inputs label i{
+    font-size: 17px;
+    color: rgba(0,0,0,0.55);
+}
+
+.inputs label::before{
+    content: '';
+    width: 2px;
+    height: 15px;
+    margin-top: 8px;
+    background-color: rgba(0,0,0,0.55);
+    opacity: 0.3;
+}
+
+.divpai .logo2{
+    width: 380;
+}
+
+.divpai2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #ffe600;
+    border: none;
+}
