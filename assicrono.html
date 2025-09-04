@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #barra{
+            width: 10vw;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="barra">
+
+    </div>
+    <script>
+        let bateria = 0;
+        const recarga = setInterval(() => {
+            const rrcgBateria = document.createElement("div")
+            rrcgBateria.classList.add("bateria")
+            rrcgBateria.style.width = "10vw"
+            rrcgBateria.style.height = "3px"
+            rrcgBateria.style.backgroundColor = "green"
+            document.getElementById("barra").appendChild(rrcgBateria)
+            
+            bateria++;
+            if (bateria == 100){
+            clearInterval(recarga);
+            }
+        }, 1000);
+
+        </script>
+</body>
+</html>              
